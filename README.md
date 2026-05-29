@@ -1,11 +1,17 @@
 # Vision Transformer (ViT) from Scratch
 
 A deep learning project implemented in PyTorch that builds, trains, and evaluates a **Vision Transformer (ViT)** for image classification from scratch. This project is a practical application of the groundbreaking research paper: *"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"*.
+[DEEP LEARNING PRESENTATION.pdf](https://github.com/user-attachments/files/28403642/DEEP.LEARNING.PRESENTATION.pdf)
+
 
 ## Project Overview
 Unlike traditional Convolutional Neural Networks (CNNs), the Vision Transformer applies the standard Transformer architecture (originally designed for text and NLP tasks) directly to images. By flattening image patches and treating them like words in a sentence, the model utilizes Self-Attention mechanisms to learn spatial relationships across the entire image.
+<img width="769" height="449" alt="image" src="https://github.com/user-attachments/assets/4f70e868-357f-4385-80f5-1c0cfe9c94c1" />
+
 
 ## Architecture & Process Flow
+<img width="1495" height="805" alt="image" src="https://github.com/user-attachments/assets/a79466f3-bd83-4cd0-9958-e07e4fd4e013" />
+
 The project follows a structured, step-by-step deep learning pipeline:
 1. **Dataset Loading:** Prepares image data for classification.
 2. **Patch Embedding:** Breaks input images down into small non-overlapping patches (e.g., 16x16 pixels) and projects them into linear embeddings alongside learnable position embeddings.
@@ -15,6 +21,7 @@ The project follows a structured, step-by-step deep learning pipeline:
 6. **Training Loop:** Trains the model using optimization algorithms and tracks the loss over epochs.
 7. **Validation & Accuracy:** Benchmarks model performance on unseen data.
 8. **Prediction:** Runs inference to classify single test images.
+
 
 ## Project Details
 * Each image patch is transformed into a **768-dimensional** vector space representation to serve as the token embeddings for the transformer encoder.
